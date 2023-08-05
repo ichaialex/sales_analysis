@@ -75,4 +75,15 @@ SET SALE_PRICE =
  WHERE SALE_PRICE =0 and year_column= 2017
  GROUP by BUILDING_CLASS_CATEGORY
 
- 
+--stakeholders also want to know their sales in 2017 and 2018
+  SELECT year_column, SUM(TRY_CONVERT(numeric(18), SALE_PRICE)) as total_sales
+  from [housing project]
+  GROUP by year_column
+--stakeholders want to know the top neighborhood,building category
+SELECT top 1(NEIGHBORHOOD), SUM(TRY_CONVERT(numeric(18), SALE_PRICE)) as top_sale
+FROM [housing project]
+GROUP by NEIGHBORHOOD
+order by top_sale DESC
+
+
+
