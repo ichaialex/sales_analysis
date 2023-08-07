@@ -10,5 +10,5 @@ Where no apartment number was present, the column was left as null.
 1.classify the data to better understand the data.
 2.stakeholders what to know the amount of money they have sold in each neighborhood each year
 3.stakeholders want to know how many units they have not sold yet categorized by building class and broken down in years
-4.stakeholders also want to know their sales in 2017 and 2018
+4.stakeholders also want to know their sales in 2017 and 2018.
 
